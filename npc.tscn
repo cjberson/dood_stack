@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkrqkogrlbi2f"]
+
+[ext_resource type="Script" path="res://npc.gd" id="1_delbe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_irxmq"]
+albedo_color = Color(1, 1, 0.113725, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wi0we"]
+material = SubResource("StandardMaterial3D_irxmq")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_duxfw"]
+
+[node name="NPC" type="CharacterBody3D" groups=["npc"]]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_delbe")
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Pivot"]
+mesh = SubResource("BoxMesh_wi0we")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_duxfw")
