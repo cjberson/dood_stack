@@ -11,6 +11,9 @@ var target_velocity = Vector3.ZERO
 var base = null
 var prev_base = null
 
+const COS_45 = cos(PI / 4)
+const SIN_45 = sin(PI / 4)
+
 
 func _physics_process(delta):	
 	# We create a local variable to store the input direction.
@@ -39,10 +42,6 @@ func _physics_process(delta):
 	# Vertical Velocity
 	if not is_on_floor():	 # If in the air, fall towards the floor
 		target_velocity.y = target_velocity.y - (fall_acceleration * delta)
-		
-
-	# Moving the Character
-	velocity = target_velocity
 	
 	if Input.is_action_just_pressed("jump"):
 		if base == null:
@@ -80,16 +79,26 @@ func _physics_process(delta):
 				position.z = collider.position.z
 				base = collider
 				
-				break
+				break		
+	print(target_velocity)
+	target_velocity = cartesian_to_isometric(target_velocity)	
 	
 	if base == null:
+		velocity = target_velocity
 		move_and_slide()
 	else:
-		base.velocity = velocity
+		base.velocity = target_velocity
 		base.move_and_slide()
 		
 		position.x = base.position.x
 		position.y = base.position.y + 1
 		position.z = base.position.z
+		
+func cartesian_to_isometric(cartesian):
+	# Rotation by 45 degrees clockwise: https://en.wikipedia.org/wiki/Rotation_matrix
+	var iso_x = cartesian.x * COS_45  - cartesian.z * SIN_45
+	var iso_z = cartesian.x * SIN_45 + cartesian.z * COS_45
+	
+	return Vector3(iso_x, cartesian.y, iso_z)
 		
 		

@@ -19,17 +19,17 @@ data = PackedVector3Array(11.4999, 4, -6.5, 11.4999, 3.5, -6.5, 11.4999, 4, -11.
 transform = Transform3D(-0.857859, -4.1994e-08, -0.513886, -0.309457, 0.798352, 0.516595, 0.410262, 0.602191, -0.684873, 0, 11.246, 0)
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("1_we6py")]
-transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, 2.08165e-12, 1, 2.08165e-12)
+transform = Transform3D(0.75, -2.6159e-16, 2.6159e-16, 2.6159e-16, 0.75, -2.6159e-16, -2.6159e-16, 2.6159e-16, 0.75, 2.08165e-12, 1, 2.08165e-12)
 
 [node name="CameraPivot" type="Marker3D" parent="."]
-transform = Transform3D(0.707107, 0.577096, -0.408607, 2.01549e-16, 0.577857, 0.816137, 0.707107, -0.577096, 0.408607, 4, 13, 4.5)
+transform = Transform3D(0.707107, 0.5, -0.5, 2.4663e-16, 0.707106, 0.707106, 0.707107, -0.5, 0.5, 4, 10, 4.5)
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 projection = 1
 size = 24.0
 
 [node name="NPC" parent="." instance=ExtResource("2_thw04")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, -5)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 1, 2, -5)
 
 [node name="Playground" type="StaticBody3D" parent="." groups=["world"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, -1, 2.08165e-12)
