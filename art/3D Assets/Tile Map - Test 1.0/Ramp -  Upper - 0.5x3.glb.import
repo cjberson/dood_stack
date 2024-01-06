@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://5tgw1heauuwl"
-path="res://.godot/imported/Little Tree.glb-e72dcc6d7ddeb8961bb4618cc3cc7bba.scn"
+uid="uid://nkhew026uo42"
+path="res://.godot/imported/Ramp -  Upper - 0.5x3.glb-791a9732c516b0f810b28932586051a5.scn"
 
 [deps]
 
-source_file="res://art/3D Assets/Tile Map - Test 1.0/Little Tree.glb"
-dest_files=["res://.godot/imported/Little Tree.glb-e72dcc6d7ddeb8961bb4618cc3cc7bba.scn"]
+source_file="res://art/3D Assets/Tile Map - Test 1.0/Ramp -  Upper - 0.5x3.glb"
+dest_files=["res://.godot/imported/Ramp -  Upper - 0.5x3.glb-791a9732c516b0f810b28932586051a5.scn"]
 
 [params]
 

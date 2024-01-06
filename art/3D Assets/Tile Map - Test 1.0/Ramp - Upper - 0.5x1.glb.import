@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bvj7w6ldrxpt"
-path="res://.godot/imported/Big Tree.glb-d49dfa3a8ac76c459f08787d37fe44b9.scn"
+uid="uid://de3jbqmptfjgw"
+path="res://.godot/imported/Ramp - Upper - 0.5x1.glb-75ea16384d707e14a6226b38c80b5bed.scn"
 
 [deps]
 
-source_file="res://art/3D Assets/Tile Map - Test 1.0/Big Tree.glb"
-dest_files=["res://.godot/imported/Big Tree.glb-d49dfa3a8ac76c459f08787d37fe44b9.scn"]
+source_file="res://art/3D Assets/Tile Map - Test 1.0/Ramp - Upper - 0.5x1.glb"
+dest_files=["res://.godot/imported/Ramp - Upper - 0.5x1.glb-75ea16384d707e14a6226b38c80b5bed.scn"]
 
 [params]
 
