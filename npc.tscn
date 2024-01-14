@@ -8,7 +8,8 @@ albedo_color = Color(1, 1, 0.113725, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_wi0we"]
 material = SubResource("StandardMaterial3D_irxmq")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_duxfw"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_rca3x"]
+radius = 0.6
 
 [node name="NPC" type="CharacterBody3D" groups=["npc"]]
 collision_layer = 4
@@ -22,4 +23,4 @@ mesh = SubResource("BoxMesh_wi0we")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_duxfw")
+shape = SubResource("SphereShape3D_rca3x")
