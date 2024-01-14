@@ -8,7 +8,8 @@ albedo_color = Color(0.184314, 1, 0.109804, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_n8mow"]
 material = SubResource("StandardMaterial3D_7ngtt")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_safa4"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_8sc1k"]
+radius = 0.6
 
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.936761, 0)
@@ -23,4 +24,4 @@ mesh = SubResource("BoxMesh_n8mow")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00280762, 0.0213921, 0)
-shape = SubResource("BoxShape3D_safa4")
+shape = SubResource("SphereShape3D_8sc1k")
